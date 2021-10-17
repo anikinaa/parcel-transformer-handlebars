@@ -9,6 +9,10 @@
     "build": "babel src --out-file dist/index.cjs",
     "prepublish": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anikinaa/parcel-transformer-handlebars"
+  },
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
