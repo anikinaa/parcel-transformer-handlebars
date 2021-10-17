@@ -1,5 +1,5 @@
 {
-  "name": "@my-project/parcel-transformer-foo",
+  "name": "parcel-transformer-handlebars",
   "version": "1.0.0",
   "description": "",
   "type": "module",
