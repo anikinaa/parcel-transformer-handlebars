@@ -1,5 +1,5 @@
 {
-  "name": "parcel-transformer-handlebars",
+  "name": "@anikin/parcel-transformer-handlebars-precompile",
   "version": "1.0.0",
   "description": "",
   "type": "module",

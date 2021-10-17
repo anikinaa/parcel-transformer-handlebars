@@ -10,6 +10,7 @@ export default new Transformer({
                 const templateFunction = Handlebars.template(${precompiled});
                 export default templateFunction;
                 `;
+        asset.type = 'js';
         asset.setCode(js);
         return [asset];
     }
