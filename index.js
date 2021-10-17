@@ -1,7 +1,8 @@
-import * as Handlebars from 'handlebars'
-import { Transformer } from '@parcel/plugin';
+'use strict'
+const Handlebars = require('handlebars');
+const { Transformer } = require('@parcel/plugin');
 
-export default new Transformer({
+const transformer = new Transformer({
     async transform({asset}) {
         const source = await asset.getCode();
         const precompiled = Handlebars.precompile(source);
@@ -15,3 +16,5 @@ export default new Transformer({
         return [asset];
     }
 });
+
+module.exports = transformer;
